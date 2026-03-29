@@ -2,7 +2,7 @@ import React from "react";
 
 const ActiveUser = () => {
   return (
-    <div className="bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white py-8 ">
+    <div className="mt-8 bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white py-8 ">
       <div className="w-10/12 mx-auto flex justify-around items-center">
         <div className="left">
           <h1 className="font-extrabold text-6xl">50K+</h1>

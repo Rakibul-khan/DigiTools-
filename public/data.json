@@ -1,0 +1,104 @@
+[
+  {
+    "id": 1,
+    "name": "AI Writing Pro",
+    "description": "Advanced AI-powered writing assistant for blogs, emails, and marketing content.",
+    "price": 19,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": [
+      "AI content generation",
+      "Grammar correction",
+      "SEO optimization",
+      "Multiple tone support"
+    ],
+    "icon": "✍️",
+    "image": "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2"
+  },
+  {
+    "id": 2,
+    "name": "Design Templates Pack",
+    "description": "A collection of professionally designed templates for web and social media.",
+    "price": 49,
+    "period": "one-time",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": [
+      "100+ templates",
+      "Fully customizable",
+      "Responsive designs",
+      "Figma & PSD files"
+    ],
+    "icon": "🎨",
+    "image": "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8"
+  },
+  {
+    "id": 3,
+    "name": "Premium Stock Assets",
+    "description": "Access high-quality stock images, videos, and graphics for your projects.",
+    "price": 29,
+    "period": "monthly",
+    "tag": "new",
+    "tagType": "new",
+    "features": [
+      "Unlimited downloads",
+      "HD & 4K assets",
+      "Commercial license",
+      "Regular updates"
+    ],
+    "icon": "📸",
+    "image": "https://images.unsplash.com/photo-1492724441997-5dc865305da7"
+  },
+  {
+    "id": 4,
+    "name": "Automation Toolkit",
+    "description": "Streamline your workflow with powerful automation tools and integrations.",
+    "price": 99,
+    "period": "yearly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": [
+      "Task automation",
+      "API integrations",
+      "Custom workflows",
+      "Analytics dashboard"
+    ],
+    "icon": "⚙️",
+    "image": "https://images.unsplash.com/photo-1518770660439-4636190af475"
+  },
+  {
+    "id": 5,
+    "name": "Resume Builder Pro",
+    "description": "Create professional resumes with AI suggestions and ATS optimization.",
+    "price": 15,
+    "period": "monthly",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": [
+      "ATS optimization",
+      "Modern templates",
+      "Export to PDF",
+      "AI suggestions"
+    ],
+    "icon": "📄",
+    "image": "https://images.unsplash.com/photo-1586281380349-632531db7ed4"
+  },
+  {
+    "id": 6,
+    "name": "Social Media Content Kit",
+    "description": "All-in-one toolkit for creating engaging social media content.",
+    "price": 25,
+    "period": "monthly",
+    "tag": "new",
+    "tagType": "new",
+    "features": [
+      "Content calendar",
+      "Post templates",
+      "Hashtag generator",
+      "Analytics insights"
+    ],
+    "icon": "📱",
+    "image": "https://images.unsplash.com/photo-1492724441997-5dc865305da7"
+  }
+]
