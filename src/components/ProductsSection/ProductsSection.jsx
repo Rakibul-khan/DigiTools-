@@ -7,7 +7,7 @@ const fetchPromise = async () => {
 };
 
 const fetchRes = fetchPromise();
-const ProductsSection = () => {
+const ProductsSection = ({ handleBuyNow, cart, totalCartPrice }) => {
   const [toggle, setToggle] = useState("products");
   return (
     <div className="mt-15 space-y-2">
@@ -36,9 +36,9 @@ const ProductsSection = () => {
       </div>
 
       {toggle === "products" ? (
-        <Products fetchRes={fetchRes}></Products>
+        <Products handleBuyNow={handleBuyNow} fetchRes={fetchRes}></Products>
       ) : (
-        <Cart></Cart>
+        <Cart totalCartPrice={totalCartPrice} cart={cart}></Cart>
       )}
     </div>
   );

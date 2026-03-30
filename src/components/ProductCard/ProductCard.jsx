@@ -1,7 +1,7 @@
 import { Check } from "lucide-react";
 import React from "react";
 
-const ProductCard = ({ product }) => {
+const ProductCard = ({ product, handleBuyNow }) => {
   //   console.log(product);
   const { name, tag, price, period, image, features, description } = product;
   return (
@@ -42,7 +42,10 @@ const ProductCard = ({ product }) => {
           </p>
         ))}
         <div className="card-actions justify-end">
-          <button className="btn btn-primary w-full rounded-full bg-linear-to-r from-[#4F39F6] to-[#9514FA]">
+          <button
+            onClick={() => handleBuyNow(product)}
+            className="btn btn-primary w-full rounded-full bg-linear-to-r from-[#4F39F6] to-[#9514FA]"
+          >
             Buy Now
           </button>
         </div>
