@@ -5,11 +5,15 @@ const Cart = ({ cart, totalCartPrice }) => {
   return (
     <div className="shadow-2xl rounded-lg bg-gray-100 w-10/12 mx-auto p-4 space-y-3 ">
       <h1 className="font-bold text-2xl">Your Cart</h1>
-      <div className="flex flex-col gap-3">
-        {cart.map((item) => (
-          <CartItem item={item}></CartItem>
-        ))}
-      </div>
+      {cart.length == 0 ? (
+        <p>You have not added product yet</p>
+      ) : (
+        <div className="flex flex-col gap-3">
+          {cart.map((item, index) => (
+            <CartItem key={index} item={item}></CartItem>
+          ))}
+        </div>
+      )}
       <div className="flex justify-between items-center">
         <span>Total:</span>
         <span className="font-bold text-2xl">${totalCartPrice}</span>

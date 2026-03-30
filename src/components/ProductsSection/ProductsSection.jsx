@@ -10,7 +10,7 @@ const fetchRes = fetchPromise();
 const ProductsSection = ({ handleBuyNow, cart, totalCartPrice }) => {
   const [toggle, setToggle] = useState("products");
   return (
-    <div className="mt-15 space-y-2">
+    <div className="mt-15 ">
       <h1 className="font-extrabold text-5xl text-center">
         Premium Digital Tools
       </h1>

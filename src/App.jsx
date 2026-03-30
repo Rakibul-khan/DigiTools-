@@ -11,8 +11,14 @@ function App() {
   const [cart, setCart] = useState([]);
   const [totalCartPrice, setTotalCartPrice] = useState(0);
   const handleBuyNow = (product) => {
-    setCart([...cart, product]);
-    setTotalCartPrice(totalCartPrice + product.price);
+    const specificProduct = cart.find((item) => item.id === product.id);
+    if (specificProduct) {
+      alert("you have the item");
+      return;
+    } else {
+      setCart([...cart, product]);
+      setTotalCartPrice(totalCartPrice + product.price);
+    }
   };
   return (
     <div>

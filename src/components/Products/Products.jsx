@@ -2,6 +2,8 @@ import React, { use } from "react";
 import ProductCard from "../ProductCard/ProductCard";
 import GetStartedSection from "../GetStartedSection/GetStartedSection";
 import PricingSection from "../PricingSection/PricingSection";
+import ReadyTransformSection from "../ReadyTransformSection/ReadyTransformSection";
+import Footer from "../Footer/Footer";
 
 const Products = ({ fetchRes, handleBuyNow }) => {
   const products = use(fetchRes);
@@ -19,6 +21,8 @@ const Products = ({ fetchRes, handleBuyNow }) => {
       </div>
       <GetStartedSection></GetStartedSection>
       <PricingSection></PricingSection>
+      <ReadyTransformSection></ReadyTransformSection>
+      <Footer></Footer>
     </>
   );
 };
