@@ -6,12 +6,12 @@ import ProductsSection from "./components/ProductsSection/ProductsSection";
 
 function App() {
   return (
-    <>
+    <div>
       <Navbar></Navbar>
       <Banner></Banner>
       <ActiveUser></ActiveUser>
       <ProductsSection></ProductsSection>
-    </>
+    </div>
   );
 }
 

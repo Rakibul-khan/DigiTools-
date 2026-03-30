@@ -1,7 +1,12 @@
 import React, { useState } from "react";
 import Products from "../Products/Products";
 import Cart from "../Cart/Cart";
+const fetchPromise = async () => {
+  const res = await fetch("/data.json");
+  return res.json();
+};
 
+const fetchRes = fetchPromise();
 const ProductsSection = () => {
   const [toggle, setToggle] = useState("products");
   return (
@@ -30,7 +35,11 @@ const ProductsSection = () => {
         </button>
       </div>
 
-      {toggle === "products" ? <Products></Products> : <Cart></Cart>}
+      {toggle === "products" ? (
+        <Products fetchRes={fetchRes}></Products>
+      ) : (
+        <Cart></Cart>
+      )}
     </div>
   );
 };

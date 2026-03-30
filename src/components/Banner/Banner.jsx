@@ -5,12 +5,12 @@ const Banner = () => {
   return (
     <div className="flex gap-4 items-center w-11/12 mx-auto mt-20">
       <div className="banner-left flex-1 space-y-5">
-        <p className="bg-[#e1e7ff] rounded-full px-3 py-2  font-semibold  text-purple-700 text-center w-[300px] flex items-center gap-2">
+        <div className="bg-[#e1e7ff] rounded-full px-3 py-2  font-semibold  text-purple-700 text-center w-[300px] flex items-center gap-2">
           <div>
             <img className="w-full h-4" src="/Rectangle4.png" alt="" />
           </div>
           New:AI-Powered Tools Available
-        </p>
+        </div>
         <p className="font-extrabold text-7xl ">
           Supercharge Your Digital Workflow
         </p>
