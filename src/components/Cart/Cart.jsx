@@ -1,8 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import CartItem from "../CartItem/CartItem";
-import { ShoppingCart } from "lucide-react";
+import { HandCoins, ShoppingCart } from "lucide-react";
 
-const Cart = ({ cart, totalCartPrice, handleRemoveBtn }) => {
+const Cart = ({ cart, setCart, totalCartPrice, handleRemoveBtn }) => {
   return (
     <div className="shadow-2xl rounded-lg bg-gray-100 w-10/12 mx-auto p-4 space-y-3 mb-20 ">
       <h1 className="font-bold text-2xl">Your Cart</h1>

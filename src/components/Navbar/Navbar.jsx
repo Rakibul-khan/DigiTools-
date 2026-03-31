@@ -30,25 +30,23 @@ const Navbar = ({ cart }) => {
               className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
             >
               <li>
-                <a>Item 1</a>
+                <a>Products</a>
               </li>
               <li>
-                <a>Parent</a>
-                <ul className="p-2">
-                  <li>
-                    <a>Submenu 1</a>
-                  </li>
-                  <li>
-                    <a>Submenu 2</a>
-                  </li>
-                </ul>
+                <a>Features</a>
               </li>
               <li>
-                <a>Item 3</a>
+                <a>Pricing</a>
+              </li>
+              <li>
+                <a>Testimonials</a>
+              </li>
+              <li>
+                <a>FAQ</a>
               </li>
             </ul>
           </div>
-          <a className=" text-3xl font-bold bg-linear-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent">
+          <a className="text-lg  md:text-3xl font-bold bg-linear-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent">
             DigiTools
           </a>
         </div>
@@ -80,8 +78,8 @@ const Navbar = ({ cart }) => {
               {cart.length}
             </div>
           </div>
-          <span className="font-medium text-lg">Login</span>
-          <button className="rounded-full font-bold bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white px-3 py-2">
+          <span className="font-medium text-[16px] md:text-lg">Login</span>
+          <button className=" text-sm md:text-[16px] rounded-full font-bold bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white px-3 py-2">
             Get Started
           </button>
         </div>

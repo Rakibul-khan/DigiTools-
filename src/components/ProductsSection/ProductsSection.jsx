@@ -10,8 +10,10 @@ const fetchRes = fetchPromise();
 const ProductsSection = ({
   handleBuyNow,
   cart,
+  setCart,
   totalCartPrice,
   handleRemoveBtn,
+  addToggle,
 }) => {
   const [toggle, setToggle] = useState("products");
   return (
@@ -41,12 +43,17 @@ const ProductsSection = ({
       </div>
 
       {toggle === "products" ? (
-        <Products handleBuyNow={handleBuyNow} fetchRes={fetchRes}></Products>
+        <Products
+          addToggle={addToggle}
+          handleBuyNow={handleBuyNow}
+          fetchRes={fetchRes}
+        ></Products>
       ) : (
         <Cart
           handleRemoveBtn={handleRemoveBtn}
           totalCartPrice={totalCartPrice}
           cart={cart}
+          setCart={setCart}
         ></Cart>
       )}
     </div>

@@ -51,9 +51,9 @@ const ProductCard = ({ product, handleBuyNow }) => {
             className={`btn btn-primary w-full rounded-full ${toggle === false ? "bg-linear-to-r from-[#4F39F6] to-[#9514FA]" : "bg-green-600 text-white"}`}
           >
             {toggle === true ? (
-              <button className="flex items-center">
+              <p className="flex items-center justify-center">
                 <Check></Check> Added to Cart!
-              </button>
+              </p>
             ) : (
               "Buy Now"
             )}
