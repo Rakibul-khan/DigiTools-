@@ -6,6 +6,7 @@ import GetStartedSection from "./components/GetStartedSection/GetStartedSection"
 import Navbar from "./components/Navbar/Navbar";
 import PricingSection from "./components/PricingSection/PricingSection";
 import ProductsSection from "./components/ProductsSection/ProductsSection";
+import { toast, ToastContainer } from "react-toastify";
 
 function App() {
   const [cart, setCart] = useState([]);
@@ -13,23 +14,33 @@ function App() {
   const handleBuyNow = (product) => {
     const specificProduct = cart.find((item) => item.id === product.id);
     if (specificProduct) {
-      alert("you have the item");
+      toast("You have already the Item in Cart");
       return;
     } else {
       setCart([...cart, product]);
       setTotalCartPrice(totalCartPrice + product.price);
+      toast(`Added to Cart ${product.name}`);
     }
+  };
+
+  const handleRemoveBtn = (item) => {
+    const filterdData = cart.filter((e) => e.id !== item.id);
+    setCart(filterdData);
+    setTotalCartPrice(totalCartPrice - item.price);
   };
   return (
     <div>
-      <Navbar></Navbar>
+      <Navbar cart={cart}></Navbar>
       <Banner></Banner>
       <ActiveUser></ActiveUser>
       <ProductsSection
         totalCartPrice={totalCartPrice}
         cart={cart}
         handleBuyNow={handleBuyNow}
+        handleRemoveBtn={handleRemoveBtn}
       ></ProductsSection>
+
+      <ToastContainer />
     </div>
   );
 }

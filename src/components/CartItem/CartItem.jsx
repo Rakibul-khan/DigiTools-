@@ -1,6 +1,7 @@
+import { Hamburger } from "lucide-react";
 import React from "react";
 
-const CartItem = ({ item }) => {
+const CartItem = ({ item, handleRemoveBtn }) => {
   return (
     <div className="flex justify-between items-center bg-gray-200 rounded-2xl p-3">
       <div className="flex items-center gap-3">
@@ -10,7 +11,9 @@ const CartItem = ({ item }) => {
           <span>${item.price}</span>
         </div>
       </div>
-      <button className="text-red-700">Remove</button>
+      <button onClick={() => handleRemoveBtn(item)} className="text-red-700">
+        Remove
+      </button>
     </div>
   );
 };

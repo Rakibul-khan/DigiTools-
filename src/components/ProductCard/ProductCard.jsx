@@ -1,7 +1,8 @@
 import { Check } from "lucide-react";
-import React from "react";
+import React, { useState } from "react";
 
 const ProductCard = ({ product, handleBuyNow }) => {
+  const [toggle, setToggle] = useState(false);
   //   console.log(product);
   const { name, tag, price, period, image, features, description } = product;
   return (
@@ -43,10 +44,19 @@ const ProductCard = ({ product, handleBuyNow }) => {
         ))}
         <div className="card-actions justify-end">
           <button
-            onClick={() => handleBuyNow(product)}
-            className="btn btn-primary w-full rounded-full bg-linear-to-r from-[#4F39F6] to-[#9514FA]"
+            onClick={() => {
+              handleBuyNow(product);
+              setToggle(true);
+            }}
+            className={`btn btn-primary w-full rounded-full ${toggle === false ? "bg-linear-to-r from-[#4F39F6] to-[#9514FA]" : "bg-green-600 text-white"}`}
           >
-            Buy Now
+            {toggle === true ? (
+              <button className="flex items-center">
+                <Check></Check> Added to Cart!
+              </button>
+            ) : (
+              "Buy Now"
+            )}
           </button>
         </div>
       </div>
