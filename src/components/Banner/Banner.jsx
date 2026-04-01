@@ -3,7 +3,7 @@ import React from "react";
 
 const Banner = () => {
   return (
-    <div className="flex gap-4 items-center w-11/12 mx-auto mt-20">
+    <div className="flex flex-col-reverse md:flex-row md:gap-4 items-center w-11/12 mx-auto md:mt-20">
       <div className="banner-left flex-1 space-y-5">
         <div className="bg-[#e1e7ff] rounded-full px-3 py-2  font-semibold  text-purple-700 text-center w-[300px] flex items-center gap-2">
           <div>
@@ -11,10 +11,10 @@ const Banner = () => {
           </div>
           New:AI-Powered Tools Available
         </div>
-        <p className="font-extrabold text-7xl ">
+        <p className="font-extrabold text-4xl md:text-7xl ">
           Supercharge Your Digital Workflow
         </p>
-        <p className="text-lg text-[#627382]">
+        <p className="text-lg w-full text-[#627382]">
           Access premium AI tools, design assets, templates, and productivity
           software—all in one place. Start creating faster today.
         </p>
@@ -33,7 +33,7 @@ const Banner = () => {
       </div>
       <div className="banner-right flex-1 ">
         <img
-          className="w-full h-[600px] object-contain "
+          className="w-full h-120 md:h-150 object-contain "
           src="/banner.png"
           alt="banner image"
         />

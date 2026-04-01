@@ -35,7 +35,7 @@ function App() {
   return (
     <div>
       <Navbar cart={cart}></Navbar>
-      {/* <Banner></Banner>
+      <Banner></Banner>
       <ActiveUser></ActiveUser>
       <ProductsSection
         totalCartPrice={totalCartPrice}
@@ -45,9 +45,9 @@ function App() {
         handleRemoveBtn={handleRemoveBtn}
       ></ProductsSection>
       <GetStartedSection></GetStartedSection>
-      <PricingSection></PricingSection>
-      <ReadyTransformSection></ReadyTransformSection>
-      <Footer></Footer> */}
+      {/* <PricingSection></PricingSection> */}
+      {/* <ReadyTransformSection></ReadyTransformSection> */}
+      {/* <Footer></Footer> */}
 
       <ToastContainer />
     </div>
