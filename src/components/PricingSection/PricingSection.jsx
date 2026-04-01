@@ -3,8 +3,8 @@ import React from "react";
 
 const PricingSection = () => {
   return (
-    <div className="my-30">
-      <h1 className="font-extrabold text-5xl text-center">
+    <div className="my-15 md:my-30">
+      <h1 className="font-extrabold text-3xl md:text-5xl text-center">
         Simple, Transparent Pricing
       </h1>
       <p className="text-center my-5">

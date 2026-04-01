@@ -13,6 +13,7 @@ const ProductsSection = ({
   setCart,
   totalCartPrice,
   handleRemoveBtn,
+  handleCheckOut,
   addToggle,
 }) => {
   const [toggle, setToggle] = useState("products");
@@ -54,6 +55,7 @@ const ProductsSection = ({
           totalCartPrice={totalCartPrice}
           cart={cart}
           setCart={setCart}
+          handleCheckOut={handleCheckOut}
         ></Cart>
       )}
     </div>

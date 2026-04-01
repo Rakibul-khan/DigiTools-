@@ -32,6 +32,11 @@ function App() {
     setTotalCartPrice(totalCartPrice - item.price);
     toast(`${item.name} removed from cart`);
   };
+  const handleCheckOut = () => {
+    setCart([]);
+    toast("You have Sucessfully CheckOut");
+    return;
+  };
   return (
     <div>
       <Navbar cart={cart}></Navbar>
@@ -43,11 +48,12 @@ function App() {
         setCart={setCart}
         handleBuyNow={handleBuyNow}
         handleRemoveBtn={handleRemoveBtn}
+        handleCheckOut={handleCheckOut}
       ></ProductsSection>
       <GetStartedSection></GetStartedSection>
-      {/* <PricingSection></PricingSection> */}
-      {/* <ReadyTransformSection></ReadyTransformSection> */}
-      {/* <Footer></Footer> */}
+      <PricingSection></PricingSection>
+      <ReadyTransformSection></ReadyTransformSection>
+      <Footer></Footer>
 
       <ToastContainer />
     </div>
