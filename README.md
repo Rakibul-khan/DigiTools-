@@ -19,4 +19,12 @@ Users can browse and buy various digital products like
 2.Beautiful icons with lucide
 3.Real time alerts with react-toastify
 
-link site link :
+Technologies Used :
+🌐 HTML
+🎨 Tailwind CSS
+⚡ JavaScript
+⚛️ React.js
+🎯 Lucide Icons
+🔔 React Toastify
+
+link site link : https://digitoolsproject-a6.netlify.app/
