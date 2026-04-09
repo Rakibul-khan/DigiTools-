@@ -41,7 +41,7 @@ And more…
 
 # Run this project locally
 ### Clone the Repository
-1. git clone https://github.com/rakibul-khan/digitools.git
+1. git clone [https://github.com/rakibul-khan/digitools.git](https://github.com/Rakibul-khan/DigiTools-)
 ### Install Dependencies
 2. npm install
 ### Run the project
